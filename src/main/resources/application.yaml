@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: 'update'
+  application:
+    name: aphrodite
+  flyway:
+    locations: classpath:/db/migrations
+    schemas: aphrodite
+    baselineOnMigrate: true
+    enabled: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/aphrodite
+    username: postgres
+    password: postgres
+server:
+  port: 8081
