@@ -27,9 +27,7 @@ public class Produit {
 	private boolean disponible ;
 	private LocalDate dateAjout = LocalDate.now() ;
 	private String description;
-	
-	@OneToMany(mappedBy = "produit", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-	private List<Commentaire> commentaireList ;  
+    private String marque ; 
 	@ManyToOne
 	private Categorie categorie ;
 	
@@ -73,18 +71,22 @@ public class Produit {
 	}
 	public LocalDate getDateAjout() {
 		return dateAjout;
-	}
-	public List<Commentaire> getCommentaireList() {
-		return commentaireList;
-	}
-	public void setCommentaireList(List<Commentaire> commentaireList) {
-		this.commentaireList = commentaireList;
+
 	}
 	public String getPhotoUrl() {
 		return photoUrl;
 	}
 	public void setPhotoUrl(String photoUrl) {
 		this.photoUrl = photoUrl;
+	}
+	public String getMarque() {
+		return marque;
+	}
+	public void setMarque(String marque) {
+		this.marque = marque;
+	}
+	public void setDateAjout(LocalDate dateAjout) {
+		this.dateAjout = dateAjout;
 	}
 	
 	

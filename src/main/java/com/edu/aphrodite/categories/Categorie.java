@@ -11,6 +11,7 @@ public class Categorie {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nomCategorie;
+	private String description;
 
 	public Long getId() {
 		return id;
@@ -27,5 +28,15 @@ public class Categorie {
 	public void setNomCategorie(String nomCategorie) {
 		this.nomCategorie = nomCategorie;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
 
 }
