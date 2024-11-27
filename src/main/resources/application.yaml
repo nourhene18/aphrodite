@@ -16,3 +16,9 @@ spring:
     password: postgres
 server:
   port: 8081
+
+aphrodite:
+  app:
+    jwtExpirationMs: '86400000'
+    jwtSecret: U29tZVNlY3VyZVNlY3JldEtleTI1NkJpdENvbnZlcnNpb24=
+
