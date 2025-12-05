@@ -17,3 +17,11 @@ lire les avis vérifiés,
 passer leurs commandes en ligne.
 
 Cette application offre une expérience élégante et fluide autour de la découverte de produits premium, tout en facilitant la gestion interne des articles et des interactions par l’équipe Aphrodite.
+
+🛠️ Technologies
+
+Backend : Java 17 / Spring Boot
+
+Frontend : Angular
+
+Base de données : PostgreSQL
